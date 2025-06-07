@@ -1,0 +1,76 @@
+/*remueve paddig y margin general para usar el total del espacio*/
+* {
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.menu_container {
+    background-color: #1e3d8b;
+    padding: 0px;
+    color: #f4f2e7;    
+}
+/*Ajusta presentacion de la lista y remueve bullet points*/
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 18px; 
+    justify-content: space-around;      
+}
+.menu li {
+    position: relative;
+    padding: 8px 20px;
+    color: #f4f2e7;
+    cursor: pointer;
+    
+}
+/*Cambia el color del buton al pasar el cursor*/
+.menu li:hover {
+    background-color: #3b65cf;
+}
+/*Estilos del menu desplegable*/
+.submenu {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1e3d8b;
+    display: none; 
+    font-size: 15px;
+    font-weight: 200;
+    width: 115px;    
+    }
+.submenu li {
+    padding: 10px 20px;
+}
+.submenu li:hover {
+    background-color: #3b65cf;
+    display: block;
+}
+.menu li:hover .submenu {
+    display: block;
+}
+/*remueve el underline y el color azul de la fuente en los hyperlinks*/
+.linkto {
+    text-decoration: none;
+    color: #f4f2e7;
+}
+footer {
+    background-color: #3b65cf;
+    color: #f4f2e7;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 15px 0px;    
+}
