@@ -1,0 +1,117 @@
+@import "variables";
+
+.product_mod_container {
+    display: grid;
+    grid-template-areas: 
+    "image content content"
+    "image content content"
+    "image specs purchase";
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px 40px 5px 40px;
+}
+.p_mod_image {
+    display: block;
+    grid-area: image;
+    background: $libreblue;
+    background-image: url(../images/brownie_frijol_ger.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;        
+    overflow: hidden;   
+            
+}
+.p_mod_content {
+    grid-area: content;
+    background: $libreblue;
+    padding: 30px 30px 5px 30px;
+    color: $librecream;
+    font-family: $font;
+    font-weight: 200;
+    font-size: 16px;
+    .title1 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+}
+.p_mod_specs {
+    grid-area: specs;
+    background: $libreblue;
+    padding: 5px 10px 30px 30px;
+    color: $librecream;
+    font-family: $font;
+    font-weight: 300;
+    font-size: 16px;
+    .title2 {
+        font-weight: 700;
+    }
+}
+.p_mod_purchase {
+    grid-area: purchase;
+    background: $libreblue;
+    padding: 5px 30px 30px 10px;
+    display: flex;    
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;   
+   button {
+    display: flex;
+    background-color: $librelime;
+    border: 0px solid;
+    border-color: none;
+    border-radius: 6px;
+    padding: 6px;
+    transition: transform 0.8s ease; 
+    gap: 10px;  
+     .purchase_bttn {
+        color: $libreblue;
+        font-family: $font;
+        font-weight: 300;
+        font-size: 16px;       
+    }
+    .wssp_icon {
+        display: flex; 
+        align-self: center;
+        width: 19px;
+        height: 20px;      
+       
+    }
+   }
+   button:hover {
+    transform: scale(1.04);
+    background-color: rgba($librecream, 0.8) ;
+    box-shadow: 0px 0px 10px rgba($color: $librebluelight, $alpha: 1);
+}  
+}
+@media (max-width: 650px) {
+    .product_mod_container {
+    display: grid;
+    grid-template-areas: 
+    "image"
+    "content"
+    "specs"
+    "purchase";
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px;    
+    padding: 0px;
+}
+.p_mod_content {
+    text-align: center;
+    padding: 30px 40px 5px 40px;
+}
+.p_mod_specs {
+    text-align: center;
+    padding: 5px 40px 10px 40px;
+}
+ .p_mod_purchase {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px 30px 40px;    
+    button {
+        flex-direction: column;
+    justify-content: space-evenly;
+    }
+   
+}
+}

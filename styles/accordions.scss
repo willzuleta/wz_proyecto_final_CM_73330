@@ -1,0 +1,109 @@
+@import "variables";
+
+.accord_cus_main {
+    padding: 5px 40px 20px 40px;
+    color: $librebluelight;
+    font-family: $font;
+    font-weight: 200;
+    font-size: 16px;
+}
+.alert_icons_container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0px 0px 10px 0px;
+    gap: 5px;
+    .alert_icon{
+        display: flex;      
+
+    }
+}
+.modal_container { 
+    visibility: hidden;   
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+    z-index: 100;    
+    top: 50px;
+    bottom: 50px;
+    width: 100%;
+    background-color: rgba($librecream, 0.3);
+    backdrop-filter: blur(12px) saturate(1.5);
+    padding: 10px; 
+    box-shadow: 0px 0px 10px rgba($color: black, $alpha: 0.3);    
+}
+     .nut_facts_large{
+            display: flex;
+            align-self: center;
+            max-width: 600px;
+            height: auto;        
+   }     
+        .event_close {
+            display: flex;
+            align-self: center; 
+            justify-content: center;    
+            padding: 5px; 
+            width: 60px;        
+            color: black;
+            font-family: $font;
+            font-weight: 700;
+            font-size: 12px;              
+            border: 1px solid black;
+            border-color: none;
+            border-radius: 30px;                  
+    } 
+        .event_close:active {
+            background-color: black;
+            color: $librecream;
+    }
+        .tn_thumbnail {
+            display: flex;
+            width: 100%;
+            height: auto;
+    }
+
+.btn_modal { 
+     display: grid; 
+     width: 250px;       
+    .nut_facts_box1 { 
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 3;
+        
+        .image_tn {           
+            width: 250px;
+            height: auto;
+        }            
+    }
+    .nut_facts_box2 {       
+        display: block;
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;           
+        align-self: center;
+        width: 250px; 
+        padding: 120px 0px;                    
+        background-color: rgba($librecream, 0.2);
+        backdrop-filter: blur(5px) saturate(1.5);
+        color: black;  
+        font-weight: 400;
+        transition: display 0.8s ease-in; 
+        z-index: 4;
+        visibility: hidden;       
+         }             
+}
+#evento-click {
+   display: none;
+}
+.nut_facts_box1:hover ~ .nut_facts_box2 {       
+    visibility: visible;
+}
+.nut_facts_box2:hover {       
+    visibility: visible; 
+}
+#evento-click:checked ~ #modal_test {
+    visibility: visible;
+}

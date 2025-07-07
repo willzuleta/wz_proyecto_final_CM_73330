@@ -73,6 +73,334 @@ footer .foot_bottom {
     text-align: center;
   }
 }
+.button_container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 0px 40px 20px 40px;
+  gap: 10px;
+}
+.button_container button {
+  background-color: #1e3d8b;
+  border: 0px solid;
+  border-color: none;
+  border-radius: 12px;
+  transition: transform 0.8s ease;
+}
+.button_container button:hover {
+  transform: scale(1.04);
+  background-color: rgba(75, 100, 162, 0.8);
+  box-shadow: 0px 0px 10px #4b64a2;
+}
+
+@media (max-width: 650px) {
+  .button_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    gap: 10px;
+  }
+  .button_container button {
+    background-color: #1e3d8b;
+    border: 0px solid;
+    border-color: none;
+    border-radius: 0px;
+  }
+}
+.header_container {
+  height: 360px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #1e3d8b;
+}
+.header_container .header_subcontainer1 {
+  width: 40%;
+  position: relative;
+}
+.header_container .header_subcontainer1 .header_texture {
+  background-image: url(../images/header_texture.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.header_container .header_subcontainer1 .header_name {
+  background-color: #1e3d8b;
+  padding: 40px 0px;
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+.header_container .header_subcontainer1 .header_name img {
+  width: 80%;
+}
+.header_container .header_subcontainer2 {
+  background-image: url(../images/header_brownie.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 60%;
+  overflow: hidden;
+}
+
+.header_name_mobile {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .header_container {
+    display: none;
+  }
+  .header_name_mobile {
+    background-color: #1e3d8b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 60px;
+  }
+  .header_name_mobile img {
+    width: 100%;
+  }
+}
+.product_mod_container {
+  display: grid;
+  grid-template-areas: "image content content" "image content content" "image specs purchase";
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px 40px 5px 40px;
+}
+
+.p_mod_image {
+  display: block;
+  grid-area: image;
+  background: #1e3d8b;
+  background-image: url(../images/brownie_frijol_ger.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow: hidden;
+}
+
+.p_mod_content {
+  grid-area: content;
+  background: #1e3d8b;
+  padding: 30px 30px 5px 30px;
+  color: #f4f2e7;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+}
+.p_mod_content .title1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.p_mod_specs {
+  grid-area: specs;
+  background: #1e3d8b;
+  padding: 5px 10px 30px 30px;
+  color: #f4f2e7;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+.p_mod_specs .title2 {
+  font-weight: 700;
+}
+
+.p_mod_purchase {
+  grid-area: purchase;
+  background: #1e3d8b;
+  padding: 5px 30px 30px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.p_mod_purchase button {
+  display: flex;
+  background-color: #a4d1a7;
+  border: 0px solid;
+  border-color: none;
+  border-radius: 6px;
+  padding: 6px;
+  transition: transform 0.8s ease;
+  gap: 10px;
+}
+.p_mod_purchase button .purchase_bttn {
+  color: #1e3d8b;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+.p_mod_purchase button .wssp_icon {
+  display: flex;
+  align-self: center;
+  width: 19px;
+  height: 20px;
+}
+.p_mod_purchase button:hover {
+  transform: scale(1.04);
+  background-color: rgba(244, 242, 231, 0.8);
+  box-shadow: 0px 0px 10px #4b64a2;
+}
+
+@media (max-width: 650px) {
+  .product_mod_container {
+    display: grid;
+    grid-template-areas: "image" "content" "specs" "purchase";
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px;
+    padding: 0px;
+  }
+  .p_mod_content {
+    text-align: center;
+    padding: 30px 40px 5px 40px;
+  }
+  .p_mod_specs {
+    text-align: center;
+    padding: 5px 40px 10px 40px;
+  }
+  .p_mod_purchase {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px 30px 40px;
+  }
+  .p_mod_purchase button {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+.accord_cus_main {
+  padding: 5px 40px 20px 40px;
+  color: #4b64a2;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.alert_icons_container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0px 0px 10px 0px;
+  gap: 5px;
+}
+.alert_icons_container .alert_icon {
+  display: flex;
+}
+
+.modal_container {
+  visibility: hidden;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  gap: 10px;
+  z-index: 100;
+  top: 50px;
+  bottom: 50px;
+  width: 100%;
+  background-color: rgba(244, 242, 231, 0.3);
+  backdrop-filter: blur(12px) saturate(1.5);
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nut_facts_large {
+  display: flex;
+  align-self: center;
+  max-width: 600px;
+  height: auto;
+}
+
+.event_close {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 5px;
+  width: 60px;
+  color: black;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  border: 1px solid black;
+  border-color: none;
+  border-radius: 30px;
+}
+
+.event_close:active {
+  background-color: black;
+  color: #f4f2e7;
+}
+
+.tn_thumbnail {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.btn_modal {
+  display: grid;
+  width: 250px;
+}
+.btn_modal .nut_facts_box1 {
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 3;
+}
+.btn_modal .nut_facts_box1 .image_tn {
+  width: 250px;
+  height: auto;
+}
+.btn_modal .nut_facts_box2 {
+  display: block;
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
+  align-self: center;
+  width: 250px;
+  padding: 120px 0px;
+  background-color: rgba(244, 242, 231, 0.2);
+  backdrop-filter: blur(5px) saturate(1.5);
+  color: black;
+  font-weight: 400;
+  transition: display 0.8s ease-in;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#evento-click {
+  display: none;
+}
+
+.nut_facts_box1:hover ~ .nut_facts_box2 {
+  visibility: visible;
+}
+
+.nut_facts_box2:hover {
+  visibility: visible;
+}
+
+#evento-click:checked ~ #modal_test {
+  visibility: visible;
+}
+
 * {
   padding: 0;
   margin: 0px;
@@ -99,47 +427,21 @@ body {
   text-align: center;
 }
 
-.button_container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  padding: 0px 40px 20px 40px;
-  gap: 10px;
-}
-.button_container button {
-  background-color: #1e3d8b;
-  border: 0px solid;
-  border-color: none;
-  border-radius: 12px;
-}
-
 .icon_hca {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
-  padding: 10px 40px;
+  padding: 10px 40px 20px 40px;
+  gap: 10px;
 }
 
 @media (max-width: 650px) {
   .copy, .icon_hca {
     padding: 40px;
   }
-  .button_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px;
-    gap: 10px;
-  }
-  .button_container button {
-    background-color: #1e3d8b;
-    border: 0px solid;
-    border-color: none;
-    border-radius: 0px;
-  }
   .icon_hca {
-    padding: 10px 40px;
+    padding: 30px 40px 20px 40px;
   }
 }
 
