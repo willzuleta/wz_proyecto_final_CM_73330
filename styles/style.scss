@@ -5,6 +5,9 @@
 @import "product_modules";
 @import "accordions";
 @import "modal";
+@import "navbar";
+@import "product_images";
+@import "form";
 
 * {
     padding: 0;
@@ -21,7 +24,7 @@ body {
     grid-template-rows: auto auto 1fr auto;    
 }
 .copy {
-    padding: 30px 60px;
+    padding: 30px 80px;
     color: $librebluelight;
     font-family: $font;
     font-weight: 400;
@@ -37,13 +40,45 @@ body {
     padding: 10px 40px 20px 40px; 
     gap: 10px;    
 }
-
+h1 {
+    padding: 30px 60px 10px 60px;
+    margin: 0px;
+    color: $libreblue;
+    font-family: $font;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+}
+.politicas {
+   
+    padding: 10px 80px 30px 80px;   
+    color: $librebluelight;
+    font-family: $font;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    .note {
+            text-align: right;
+        }
+}
+ul {
+    margin: 0px;
+}
 
 @media (max-width: 790px) {
 .copy {
     padding: 40px;   
 }
+.politicas {
+    padding: 10px 40px 30px 40px;   
+}
 .icon_hca {
     padding: 30px 40px 20px 40px; 
+}
+.politicas {
+    text-align: left;
+    .note {
+            text-align: left;
+        }
 }
 }

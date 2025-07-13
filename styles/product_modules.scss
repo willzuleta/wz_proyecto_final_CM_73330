@@ -9,18 +9,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding: 30px 40px 5px 40px;
 }
-.p_mod_image {
-    display: block;
-    grid-area: image;
-    background: $libreblue;
-    background-image: url(../images/brownie_frijol_ger.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;        
-    overflow: hidden;   
-            
-}
 .p_mod_content {
     grid-area: content;
     background: $libreblue;
@@ -30,7 +18,7 @@
     font-weight: 200;
     font-size: 16px;
     .title1 {
-        font-size: 24px;
+        font-size: 26px;
         font-weight: 700;
     }
 }
@@ -83,16 +71,21 @@
     box-shadow: 0px 0px 10px rgba($color: $librebluelight, $alpha: 1);
 }  
 }
+.end_spacer_products_mobile {
+    display: none;
+    height: 20px;
+}
 @media (max-width: 790px) {
     .product_mod_container {
     display: grid;
+    background-color: $libreblue;
     grid-template-areas: 
     "image"
     "content"
     "specs"
     "purchase";
     grid-template-columns: 1fr;
-    grid-template-rows: 200px;    
+    grid-template-rows: 400px;    
     padding: 0px;
 }
 .p_mod_content {
@@ -114,4 +107,7 @@
     }
    
 }
+}
+.end_spacer_products_mobile {
+    display: block;
 }

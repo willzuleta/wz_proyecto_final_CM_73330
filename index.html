@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reposteria artesanal, saludable, sin gluten, sin lacteos y sin azucar">
+    <meta name="keywords" content="saludable, sin gluten, sin lacteos, sin azucar, gluten-free, no-sugar, vegan, vegano">
     <title>Somos Libredeto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +14,7 @@
 </head>
 <body>
   <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary custom_navtext">
   <div class="container-fluid">
     <a class="navbar-brand" href="./index.html"><img src="./images/ldt_logo.png" alt="ldt logo" style="display: block; width: 44px; height: auto;"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,18 +34,12 @@
             <li><a class="dropdown-item" href="./pages/cookies.html">Cookies</a></li>
             <li><a class="dropdown-item" href="./pages/trufas_de_brownie.html">Trufas de Brownie</a></li>
           </ul>
-        </li> 
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/blog.html">Blog</a>
-        </li>
+        </li>       
         <li class="nav-item">
           <a class="nav-link" href="./pages/contactanos.html">Contacto</a>
         </li>       
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+     
     </div>
   </div>
 </nav>
@@ -74,22 +70,14 @@
   </button>
 </div>
     </header>
-    <section>
-      <!-- copy -->
-      <div class="copy"><strong>Somos</strong> una empresa nacida del deseo de demostrar que lo saludable también puede ser delicioso. En cada creación, fusionamos ingredientes naturales, sin gluten, sin lácteos y con bajo contenido de azúcar, para ofrecerte productos que cuidan tu bienestar sin sacrificar lo más importante: <strong>el sabor</strong>.<br>
-        <br>
-
-Creemos que disfrutar de algo dulce no debería implicar culpas ni restricciones. Por eso, trabajamos con recetas pensadas para todos, incluso para quienes tienen intolerancias o siguen un estilo de vida consciente. Nuestro compromiso es reinventar lo tradicional con un enfoque moderno, inclusivo y lleno de sabor auténtico.<br><br>
-
-En los productos que horneamos, vas a descubrir que lo saludable puede sorprenderte… 
-y enamorarte al primer bocado.</div>
-<div class="button_container"><button><a href="./pages/brownies.html"><img src="./images/brownies_bttn.png" alt="Brownies" style="width: 180px; height: auto;"></a></button>
-<button><a href="./pages/cookies.html"><img src="./images/cookies_bttn.png" alt="Cookies" style="width: 180px; height: auto;"></a></button>
-<button><a href="./pages/trufas_de_brownie.html"><img src="./images/trufas_bttn.png" alt="Trufas de brownie" style="width: 180px; height: auto;"></a></button></div>
-<!-- hecho con amor -->
-<div class="icon_hca"><div><div><img src="./images/hecho_con_amor.png" alt="Hecho con amor" style="width: 85px; height: auto;"></div></div>
-<div>Sabor que abraza, textura que sorprende, ingredientes que cuidan.</div>
-</section></div>
+    <main>
+      <section id="Quienes_somos"><!-- copy -->
+      <div class="copy"><strong>Somos</strong> una empresa nacida del deseo de demostrar que lo saludable también puede ser delicioso. En cada creación, fusionamos ingredientes naturales, sin gluten, sin lácteos y con bajo contenido de azúcar, para ofrecerte productos que cuidan tu bienestar sin sacrificar lo más importante: <strong>el sabor</strong>.<br><br> Creemos que disfrutar de algo dulce no debería implicar culpas ni restricciones. Por eso, trabajamos con recetas pensadas para todos, incluso para quienes tienen intolerancias o siguen un estilo de vida consciente. Nuestro compromiso es reinventar lo tradicional con un enfoque moderno, inclusivo y lleno de sabor auténtico.<br><br>En los productos que horneamos, vas a descubrir que lo saludable puede sorprenderte… y enamorarte al primer bocado.</div>
+    </section>
+  </main>
+    <section id="Botones_Productos">
+<div class="button_container"><button><a href="./pages/brownies.html"><img src="./images/brownies_bttn.png" alt="Brownies" style="width: 180px; height: auto;"></a></button><button><a href="./pages/cookies.html"><img src="./images/cookies_bttn.png" alt="Cookies" style="width: 180px; height: auto;"></a></button><button><a href="./pages/trufas_de_brownie.html"><img src="./images/trufas_bttn.png" alt="Trufas de brownie" style="width: 180px; height: auto;"></a></button></div><!-- hecho con amor --><div class="icon_hca"><div><img src="./images/hecho_con_amor.png" alt="Hecho con amor" style="width: 85px; height: auto;"></div><div>Sabor que abraza, textura que sorprende, ingredientes que cuidan.</div>
+</div></section>
 <!-- footer -->
   <footer>
         <div class="foot_container">
@@ -99,7 +87,7 @@ y enamorarte al primer bocado.</div>
 </div>
         
         <div class="foot_box3">
-           <div><span style="font-weight: 700;">Enlaces</span><br><a href="./index.html" class="links">Libredeto</a><br><a href="./pages/brownies.html" class="links">Brownies</a><br><a href="./pages/cookies.html" class="links">Cookies</a><br><a href="./pages/trufas_de_brownie.html" class="links">Trufas de brownie</a><br><a href="./pages/blog.html" class="links">Blog</a><br><a href="./pages/contactanos.html" class="links">Contacto</a></div> 
+           <div><span style="font-weight: 700;">Enlaces</span><br><a href="./index.html" class="links">Libredeto</a><br><a href="./pages/brownies.html" class="links">Brownies</a><br><a href="./pages/cookies.html" class="links">Cookies</a><br><a href="./pages/trufas_de_brownie.html" class="links">Trufas de brownie</a><br><a href="./pages/politicas.html" class="links">Política de Privacidad y Tratamiento de Datos Personales | Politica de Consumo y Venta</a><br><a href="./pages/contactanos.html" class="links">Contacto</a></div> 
         </div>
         
          <div class="foot_box4">

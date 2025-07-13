@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Reposteria artesanal, saludable, sin gluten, sin lacteos y sin azucar">
+    <meta name="keywords" content="saludable, sin gluten, sin lacteos, sin azucar, gluten-free, no-sugar, vegan, vegano">
     <title>--Libredeto-- Brownies</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +13,7 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary custom_navtext">
   <div class="container-fluid">
     <a class="navbar-brand" href="../index.html"><img src="../images/ldt_logo.png" alt="ldt logo" style="display: block; width: 44px; height: auto;"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,18 +33,11 @@
             <li><a class="dropdown-item" href="../pages/cookies.html">Cookies</a></li>
             <li><a class="dropdown-item" href="../pages/trufas_de_brownie.html">Trufas de Brownie</a></li>
           </ul>
-        </li> 
-        <li class="nav-item">
-          <a class="nav-link" href="../pages/blog.html">Blog</a>
-        </li>
+        </li>         
         <li class="nav-item">
           <a class="nav-link" href="../pages/contactanos.html">Contacto</a>
         </li>       
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      </ul>   
     </div>
   </div>
 </nav>
@@ -52,7 +47,7 @@
     <div class="header_subcontainer1"><div class="header_texture"></div>
       <div class="header_name"><img src="../images/brownie_product_name.png" alt="Brownie"></div></div>     
       
-    <div class="header_subcontainer2"></div>
+    <div class="header_subcontainer2_brownie"></div>
   </div>
   <!-- header mobile -->
   <div class="header_name_mobile"><img src="../images/brownie_product_name.png" alt="Brownie"></div></div>
@@ -61,8 +56,8 @@
   <section>
     <!-- brownie de frijol start -->
       <div class="product_mod_container">
-        <div class="p_mod_image"></div>
-        <div class="p_mod_content"> <strong class="title1"> Brownie de fríjol germinado</strong>
+        <div class="p_mod_brownie1"></div>
+        <div class="p_mod_content" id="brownie_frijol"> <strong class="title1"> Brownie de fríjol germinado</strong>
           <br><br>Brownie vegano elaborado con frijol negro germinado, una fuente rica en proteínas, fibra y nutrientes esenciales que ayudan a fortalecer nuestros sistema óseo. Su textura húmeda y suave, equilibrada con el sabor intenso del chocolate y el toque sutil de la avena, hacen de este brownie una opción diferente, nutritiva y deliciosa para disfrutar sin culpa.
         </div>
         <div class="p_mod_specs"><strong class="title2">Peso aproximado:</strong> 70&nbsp;g/und <br> 
@@ -114,7 +109,7 @@
       </button>
     </h2>
     <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-      <div class="accordion-body btn_modal" id="brownie_frijol">        
+      <div class="accordion-body btn_modal">        
         <div class="nut_facts_box1"><img src="../images/tn_b_frijol_ger.png" alt="Tabla nutricional" class="image_tn"></div>        
       <div class="nut_facts_box2">
         <a href="#modal_container" class=".nut_facts_box2">Ampliar imagen</a>
@@ -125,12 +120,13 @@
   </div>
 <div class="modal_container" id="modal_container">          
       <div class="nut_facts_large"><img src="../images/tn_b_frijol_ger.png" alt="Tabla nutricional" class="tn_thumbnail"></div> <a href="#brownie_frijol" class="event_close">&times;</a>          
-    </div>   
+    </div> 
+    <div class="end_spacer_products_mobile"></div>   
     <!-- brownie de frijol end -->
      <!-- brownie vegano start -->
       <div class="product_mod_container">
-        <div class="p_mod_image"></div>
-        <div class="p_mod_content"> <strong class="title1"> Brownie vegano perfecto</strong>
+        <div class="p_mod_brownie2"></div>
+        <div class="p_mod_content"  id="brownie_vegano"> <strong class="title1"> Brownie vegano perfecto</strong>
           <br><br>Te costará creer que este brownie realmente es vegano. Él combina perfectamente todos los elementos de un brownie clásico: interior de textura húmeda, superficie ligeramente crujiente y el sabor intenso del chocolate potencializado con un toque especial de café. Un deleite capaz de generar sentimientos de felicidad y placer en cualquier ocasión.
         </div>
         <div class="p_mod_specs"><strong class="title2">Peso aproximado:</strong> 80&nbsp;g/und <br> 
@@ -182,7 +178,7 @@
       </button>
     </h2>
     <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
-      <div class="accordion-body btn_modal" id="brownie_vegano">        
+      <div class="accordion-body btn_modal">        
         <div class="nut_facts_box1"><img src="../images/tn_b_frijol_ger.png" alt="Tabla nutricional" class="image_tn"></div>        
       <div class="nut_facts_box2">
         <a href="#modal_container2" class=".nut_facts_box2">Ampliar imagen</a>
@@ -190,14 +186,15 @@
       </div>
     </div>
   </div>
-  </div>
+  </div>  
 <div class="modal_container2" id="modal_container2">          
       <div class="nut_facts_large"><img src="../images/tn_b_frijol_ger.png" alt="Tabla nutricional" class="tn_thumbnail"></div> <a href="#brownie_vegano" class="event_close">&times;</a>          
-    </div>   
+    </div> 
+    <div class="end_spacer_products_mobile"></div>  
     <!-- brownie vegano  end -->
   </section>
   <!-- footer -->
-  <footer>
+    <footer>
         <div class="foot_container">
           <div class="foot_box1" ><img src="../images/dulce_libre_real.png" alt="dulce libre real" style="display: block; width: 166px; height: 141px;" class="image_dlr"></div>
        
@@ -205,7 +202,7 @@
 </div>
         
         <div class="foot_box3">
-           <div><span style="font-weight: 700;">Enlaces</span><br><a href="../index.html" class="links">Libredeto</a><br><a href="../pages/brownies.html" class="links">Brownies</a><br><a href="../pages/cookies.html" class="links">Cookies</a><br><a href="../pages/trufas_de_brownie.html" class="links">Trufas de brownie</a><br><a href="../pages/blog.html" class="links">Blog</a><br><a href="../pages/contactanos.html" class="links">Contacto</a></div> 
+           <div><span style="font-weight: 700;">Enlaces</span><br><a href="../index.html" class="links">Libredeto</a><br><a href="../pages/brownies.html" class="links">Brownies</a><br><a href="../pages/cookies.html" class="links">Cookies</a><br><a href="../pages/trufas_de_brownie.html" class="links">Trufas de brownie</a><br><a href="../pages/politicas.html" class="links">Política de Privacidad y Tratamiento de Datos Personales | Politica de Consumo y Venta</a><br><a href="../pages/contactanos.html" class="links">Contacto</a></div> 
         </div>
         
          <div class="foot_box4">
@@ -215,7 +212,7 @@
        
         </div>
         <div class="foot_bottom">libredeto<sup>®</sup> - 2025</div>
-    </footer>     
+    </footer>      
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </html>
