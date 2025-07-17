@@ -1,0 +1,146 @@
+@import "variables";
+
+
+.header_container {
+    height: 360px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $libreblue;
+    
+    .header_subcontainer1 { 
+        width: 40%;      
+        position: relative;
+               
+        .header_texture { 
+            background-image: url(../images/header_texture.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;           
+            width: 100%;
+            height: 100%;            
+            z-index: 1;          
+            
+        }
+        .header_name {
+           background-color: $libreblue;
+           padding: 0px 0px 5px 0px;
+           width: 100%;
+           height: 40%; 
+           position: absolute;
+           top: 30%;
+           bottom: 30%;           
+           z-index: 2;
+           display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;            
+           img {
+            width: 80%;           
+           }
+
+        }
+    }
+    .header_subcontainer2_brownie {
+        background-image: url(../images/header_brownie.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 60%;        
+        overflow: hidden;   
+    }
+        .header_subcontainer2_cookie {
+        background-image: url(../images/header_cookie.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 60%;        
+        overflow: hidden;   
+    }
+       .header_subcontainer2_trufa {
+        background-image: url(../images/header_trufa.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 60%;        
+        overflow: hidden;   
+    }
+
+}
+ .header_name_mobile {
+    display: none;
+ }
+
+ .header2_container { 
+        display: flex;      
+         height: 150px;                
+        position: relative;
+         overflow: hidden; 
+               
+        .header2_texture { 
+            background-image: url(../images/header_texture2.png);
+            background-position: center;
+            background-repeat: repeat;
+            position: absolute;           
+            width: 100%;
+            height: 100%;            
+            z-index: 1;          
+            
+        }
+        .header2_name {
+           background-color: $libreblue;
+           padding: 0px;
+           width: 100%;
+           height: 40%; 
+           position: absolute;
+           top: 30%;
+           bottom: 30%;           
+           z-index: 2;
+           display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+             padding: 30px 80px;
+            color: $librecream;
+            font-family: $font;
+            font-weight: 700;
+            font-size: 32px; 
+        }
+    }
+.headermobile2_name {
+     display: none;
+}
+
+@media (max-width: 790px) {
+ .header_container {
+   display: none; 
+ }
+ .header2_container{
+    display: none;
+ }
+ .header_name_mobile {    
+    background-color: $libreblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 60px; 
+    img {
+        width: 100%;
+    }
+ }
+ .headermobile2_name {
+     background-color: $libreblue;
+    display: block;   
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+    color: $librecream;
+    font-family: $font;
+    font-weight: 700;
+    font-size: 32px; 
+}
+}

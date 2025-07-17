@@ -1,0 +1,99 @@
+@import "variables";
+
+
+.contacto_copy {  
+    padding: 30px 40px;
+    color: $librebluelight;
+    font-family: $font;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    strong{
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 100%;
+    }
+}
+.contact_form {
+    width: 50%;
+    background-color: rgba($librecream, $alpha: 0.5); 
+    margin: 0px auto 30px auto;
+    padding: 30px;
+    border: 2px solid $librecream;  
+    border-radius: 12px;
+}
+.form_container {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-auto-columns: 100%;
+}
+.form_input { 
+    font-family: $font;
+    font-size: 16px;
+    padding: 4px 8px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+.form_input--message {
+    resize: none;
+    height: 200px;
+    margin-bottom: 20px;
+} 
+.seccion_enviar{
+    display: grid; 
+    grid-template-columns: 15px auto;
+    grid-template-rows: auto 36px;      
+    gap: 5px;  
+    grid-template-areas: 
+    "check politicas"
+    "boton boton";   
+    align-items: flex-start;
+}
+.marcador {
+    grid-area: check;
+    align-self: flex-start;
+}
+.texto_politicas{  
+    grid-area: politicas;
+    font-family: $font;
+    font-size: 12px;
+    color: $librebluelight;
+    a {
+        color: $librebluelight;        
+    }
+}
+ #enviar_mensaje {
+    /* Estilo por defecto del botón */
+    grid-area: boton;
+    width: 40%;
+    background-color: rgba($librebluelight, $alpha: 0.5);
+    color: rgba($librebluelight, $alpha: 0.5);
+    font-family: $font;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    padding: 5px;
+    cursor: not-allowed;   
+    transition: transform 0.8s ease;         
+  }
+
+  #aceptar_politicas:checked ~ label ~ #enviar_mensaje {
+    /* Estilo cuando el checkbox está marcado */
+    background-color: $libreblue;
+    color: $librecream;
+    cursor: pointer;
+    /* Quita la propiedad disabled */
+    disabled: false;     
+  }     
+  #aceptar_politicas:not(:checked) + label + #enviar_mensaje {
+    /* Estilo cuando el checkbox no está marcado */
+    disabled: true;
+  }
+  @media (max-width: 790px) {
+    .contact_form {
+        width: 80%;
+    }
+  }
