@@ -77,7 +77,8 @@
     border-radius: 12px;
     padding: 5px;
     cursor: not-allowed;   
-    transition: transform 0.8s ease;         
+    transition: transform 0.8s ease; 
+          
   }
 
   #aceptar_politicas:checked ~ label ~ #enviar_mensaje {

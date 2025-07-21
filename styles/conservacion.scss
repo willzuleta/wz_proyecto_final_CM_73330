@@ -1,0 +1,160 @@
+@import "variables";
+
+.container_conservacion {
+    font-family: $font;
+    padding: 0px 40px 40px 40px;
+    display: grid;  
+    grid-template-areas: 
+    "box-1 box-1 box-1"
+    "box-2 box-3 box-4"
+    "box-5 box-6 box-7"
+    "box-8 box-9 box-10"
+    "box-11 box-12 box-13"
+    "box-14 box-14 box-14";  
+}
+.title_conserv {
+    background-color: $libreblue;
+    color: $librecream;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 30px;
+}
+.box_conserv1 {
+    background-color: #788bb9;
+    color: $librecream;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 30px;
+    align-content: center;
+}
+.box_conserv2 {
+    background-color: #6177ae;
+    color: $librecream;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 30px;
+    align-content: center;
+}
+.box_conserv3 {
+    background-color: $libreblue;
+    color: $librecream;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 30px;
+    align-content: center;
+}
+.mob_conserv_container {
+    display: none;
+}
+
+.conserv_container_cookies{
+    font-family: $font;
+    padding: 0px 40px 40px 40px;
+    font-size: 16px;
+    .title_conserv_cookies {
+        background-color: $libreblue;
+        padding: 15px 30px;
+        color: $librecream;
+        font-weight: 700;
+    }
+    ul {
+        background-color: #788bb9;
+    color: $librecream;   
+    font-weight: 700;
+    padding: 15px 30px;
+    align-content: center;
+    li {
+        list-style-position: inside;
+        font-weight: 400;
+        padding: 5px 30px;
+        align-content: center;
+        text-indent: -23px;
+        padding-left: 28px;
+    }
+    .recomendacion {
+        font-weight: 400;
+    }
+    }
+}
+
+@media (max-width: 790px) {
+    
+    .conserv_container_cookies{ 
+    padding: 0px 0px 40px 0px;
+   
+}
+
+   .container_conservacion {
+    display: none;
+   }
+.mob_conserv_container {
+   font-family: $font;
+   background-color: $libreblue;
+    padding: 0px;
+    display: grid;   
+    grid-template-columns: auto 1fr; 
+    grid-template-areas: 
+    "mbox-1 mbox-1"
+    "mbox-2 mbox-5"
+     "mbox-3 mbox-6"
+     "mbox-4 mbox-7"
+     "mbox-2b mbox-8"
+    "mbox-3b mbox-9"
+    "mbox-4b mbox-10"
+    "mbox-2c mbox-11"
+    "mbox-3c mbox-12"
+    "mbox-4c mbox-13"
+    "mbox-14 mbox-14"
+; 
+}
+.mob_conserv_title {
+    background-color: $libreblue;
+    color: $librecream;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center; 
+    padding: 10px;   
+}
+.mob_conserv_title2 { 
+    text-align: center;
+    background-color: #788bb9;       
+    color: $librebluelight;
+    font-size: 16px;
+    font-weight: 700;    
+    padding: 10px;
+    writing-mode: sideways-lr;    
+}
+.mob_conserv_box {
+    background-color: #788bb9;;
+    color: $librecream;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 30px;
+    align-content: center;
+}
+.mob_conserv_title2b { 
+    background-color: #6177ae;  
+    text-align: center;     
+    color: $librebluelight;
+    font-size: 16px;
+    font-weight: 700;    
+    padding: 10px;
+    writing-mode: sideways-lr;    
+}
+.mob_conserv_box2 {
+    background-color:#6177ae;
+    color: $librecream;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 30px;
+    align-content: center;
+}
+.mob_conserv_box3 {
+    background-color: $libreblue;
+    color: $librecream;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center; 
+    padding: 10px 40px;   
+}
+}
