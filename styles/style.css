@@ -653,7 +653,7 @@ footer .foot_bottom {
   display: block;
   grid-area: image;
   background: #1e3d8b;
-  background-image: url(../images/not_available.png);
+  background-image: url(../images/brownie_frijol.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -665,7 +665,7 @@ footer .foot_bottom {
   display: block;
   grid-area: image;
   background: #1e3d8b;
-  background-image: url(../images/not_available.png);
+  background-image: url(../images/brownie_vegano.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -678,7 +678,7 @@ footer .foot_bottom {
   display: block;
   grid-area: image;
   background: #1e3d8b;
-  background-image: url(../images/not_available.png);
+  background-image: url(../images/cookie_chips.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -690,7 +690,7 @@ footer .foot_bottom {
   display: block;
   grid-area: image;
   background: #1e3d8b;
-  background-image: url(../images/not_available.png);
+  background-image: url(../images/cookie_pistacho.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -715,7 +715,7 @@ footer .foot_bottom {
   display: block;
   grid-area: image;
   background: #1e3d8b;
-  background-image: url(../images/not_available.png);
+  background-image: url(../images/trufa_coco.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -727,7 +727,7 @@ footer .foot_bottom {
   display: block;
   grid-area: image;
   background: #1e3d8b;
-  background-image: url(../images/not_available.png);
+  background-image: url(../images/trufa_maracuya.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -739,7 +739,7 @@ footer .foot_bottom {
   display: block;
   grid-area: image;
   background: #1e3d8b;
-  background-image: url(../images/not_available.png);
+  background-image: url(../images/trufa_mani.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -751,7 +751,7 @@ footer .foot_bottom {
   display: block;
   grid-area: image;
   background: #1e3d8b;
-  background-image: url(../images/not_available.png);
+  background-image: url(../images/trufa_pistacho.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -940,6 +940,9 @@ footer .foot_bottom {
 }
 
 @media (max-width: 790px) {
+  .conserv_container_cookies {
+    padding: 0px 0px 40px 0px;
+  }
   .container_conservacion {
     display: none;
   }
